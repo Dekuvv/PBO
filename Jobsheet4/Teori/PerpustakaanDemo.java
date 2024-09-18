@@ -7,7 +7,7 @@ public class PerpustakaanDemo {
         Buku buku2 = new Buku("Pemrograman Python", "Guido van Rossum", "978-0987654321");
 
         // Membuat objek Anggota
-        Anggota anggota1 = new Anggota("Andi", "AG001");
+        Anggota anggota1 = new Anggota("Adit Bagus", "TI001");
 
         // Membuat objek Peminjaman
         Peminjaman peminjaman1 = new Peminjaman(buku1, "2024-09-16");
