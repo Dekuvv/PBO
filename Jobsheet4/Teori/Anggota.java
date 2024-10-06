@@ -25,6 +25,17 @@ public class Anggota {
         peminjamanList.add(peminjaman);
     }
 
+    public void kembalikanBuku(Buku buku) {
+        for (int i = 0; i < peminjamanList.size(); i++) {
+            if (peminjamanList.get(i).getBuku().getIsbn().equals(buku.getIsbn())) {
+                peminjamanList.remove(i);
+                System.out.println("Buku " + buku.getJudul() + " telah dikembalikan.");
+                return;
+            }
+        }
+        System.out.println("Buku tidak ditemukan dalam daftar peminjaman.");
+    }
+
     public void infoAnggota() {
         System.out.println("Anggota: " + nama + " (ID: " + idAnggota + ")");
         System.out.println("Daftar Peminjaman:");
