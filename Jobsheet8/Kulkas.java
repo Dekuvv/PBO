@@ -18,4 +18,13 @@ public class Kulkas extends AlatElektronik {
     public int getJumlahPintu() {
         return jumlahPintu;
     }
+
+    // Method getInfo
+    public String getInfo() {
+        return "=== Kulkas ===\n" +
+               "Jumlah Pintu: " + jumlahPintu + "\n" +
+               "Merk: " + getMerk() + "\n" +
+               "Warna: " + getWarna() + "\n" +
+               "Harga: Rp" + getHarga();
+    }
 }

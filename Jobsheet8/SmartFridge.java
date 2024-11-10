@@ -25,4 +25,14 @@ public class SmartFridge extends Kulkas implements Audible {
     public void setVolume(int volume) {
         this.volume = volume;
     }
+
+    // Method getInfo
+    public String getInfo() {
+        return "=== Smart Fridge ===\n" +
+               "Volume: " + volume + "\n" +
+               "Jumlah Pintu: " + getJumlahPintu() + "\n" +
+               "Merk: " + getMerk() + "\n" +
+               "Warna: " + getWarna() + "\n" +
+               "Harga: Rp" + getHarga();
+    }
 }
